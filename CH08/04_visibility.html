@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>가시성 속성과 디스플레이 속성 비교하기</title>
+        <style>
+            .v1{
+                visibility: hidden;
+                border: 1px dotted red;
+            }
+            .v2{
+                visibility: visible;
+                border: 1px dotted red;
+            }
+            .v3{
+                display: none;
+                border: 1px dotted red;
+            }
+        </style>
+    </head>
+	
+    <body>
+        <div class="v1"><!--hidden, has space-->
+            <img src="pic1.jpg">
+        </div>
+        <div class="v2">
+            <img src="pic1.jpg">
+        </div>
+        <div class="v3"><!--hidden, no space-->
+            <img src="pic1.jpg">
+        </div>
+        <div class="v2">
+            <img src="pic1.jpg">
+        </div>
+	</body>	
+</html>
