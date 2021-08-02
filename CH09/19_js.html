@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>성별과 성년을 구분</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                var gender="M";
+                var age=21;
+                if(gender=="M"){
+                    if(age>=19){
+                        result="남자 성인"
+                    }else{
+                        result="남자 미성년자"
+                    }
+                }else{
+                    if(age>=19){
+                        result="여자 성인"
+                    }else{
+                        result="여자 미성년자"
+                    }
+                }
+                document.write("당신은 " + result + "<p/>");
+            </script>
+		</footer>
+	</body>	
+</html>

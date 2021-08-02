@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>using continue</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                var x=0;
+                var sum=0;
+                for(x=1; x<=100; x++){
+                    if(x%3 != 0){
+                        continue;
+                    }
+                    sum+=x;
+                    document.write(x + " ");
+                }
+                document.write("<p/>");
+                document.write("sum of multiples of 3 : <b> " + sum + "</b>");
+            </script>
+		</footer>
+	</body>	
+</html>

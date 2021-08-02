@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>요일별 일정을 알려주는 프로그램</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                var text;
+                var week=new Date().getDate(); //0~6 sun~sat
+                switch(week){
+                    case 1:
+                    case 2:
+                        text="THML5";
+                        break;
+                    case 3:
+                    case 4:    
+                        text="Javascript";
+                        break;
+                    case 5:
+                    case 6:
+                        text="english";
+                        break;
+                    case 0:
+                    default:
+                        text="german";
+                }
+                document.write("Today, you need to do <b>" + text + "</b>")
+            </script>
+		</footer>
+	</body>	
+</html>

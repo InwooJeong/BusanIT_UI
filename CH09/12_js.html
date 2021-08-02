@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>Global var &amp; Local var</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                function getGrade(){ //define function
+                    var kor=95; //local var
+                    return kor;
+                }
+                getKor = getGrade(); //function
+                document.write("국어 점수 : " + getKor + "<br>");
+            </script>
+		</footer>
+	</body>	
+</html>
