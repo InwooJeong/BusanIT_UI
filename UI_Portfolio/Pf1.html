@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Portfolio 1</title>
+        <style>
+            legend{
+                font-weight: bold;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+	
+    <body>
+        <form>
+            <fieldset>
+                <legend>개인 정보 입력</legend>
+                <p>아 이 디 : <input type="text" name="id">
+                    <button type="button" onclick="alert('아이디 유효성 검사!')">ID 중복검사</button></p>
+                <p>생년월일 : <input type="date" name="bday"></p>
+                <p>성 별 : <input type="radio" name="gender" value="m">남자
+                          <input type="radio" name="gender" value="f">여자</p>
+                <p>E-mail : <input type="email" name="email"></p>
+                <p>메일수신 : <input type="radio" name="agree" value="y">수신동의
+                            <input type="radio" name="agree" value="n">수신거부</p>
+                <p>핸드폰 : <select name="cp0">
+                            <option value="0" selected>010</option>
+                            <option value="1">011</option>
+                            <option value="2">070</option>
+                           </select> -
+                           <input type="tel" name="cp1" pattern="[0-9]{4}">-
+                           <input type="tel" name="cp2" pattern="[0-9]{4}"></p>
+                <p>직업 : <select name="job">
+                            <option value="stu" selected>학생</option>
+                            <option value="teacher">강사</option>
+                            <option value="whitehand">백수</option>
+                          </select></p>
+                <p>취미 : <input type="checkbox" name="hobby" value="shopping">쇼핑
+                         <input type="checkbox" name="hobby" value="internet">인터넷
+                         <input type="checkbox" name="hobby" value="music">음악감상
+                         <input type="checkbox" name="hobby" value="book">독서
+                         <input type="checkbox" name="hobby" value="sport">스포츠</p>
+                <p>자기 소개 : <textarea cols="40" rows="7"></textarea></p>
+            </fieldset>
+            <input type="submit" value="등록">
+            <input type="reset" value="초기화">
+        </form>
+	</body>	
+</html>
