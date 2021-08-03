@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>use indexOf & lastIndexOf</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                var data=[10,20,30,40,50,60,70,80,90,100];
+                document.write("datas in array : [" + data + "]<p/>");
+                document.write("30 from first : " + data.indexOf(30) + "<p/>");
+                document.write("30 from last : " + data.lastIndexOf(30) + "<p/>");
+                document.write("30 from 3rd : " + data.indexOf(30, 3) + "<p/>");
+                document.write("300 from first : " + data.indexOf(300) + "<p/>");
+                
+                function printArr(item, index){
+                    document.write("Data [" + index + "] : " + item + "<br>");
+                }
+                data.forEach(printArr);
+            </script>
+		</footer>
+	</body>	
+</html>

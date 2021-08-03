@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>Set Array 1 to 100 and add all</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                var arrdata=[];
+                function insertArr(){
+                    var i=0;
+                    for(i=0;i<=99;i++){
+                        arrdata[i]=i+1;
+                    }
+                    selectArr();
+                }
+                function selectArr(){
+                    var i;
+                    for(i=0;i<arrdata.length;i++){
+                        document.write(arrdata[i] + " ");
+                    }
+                    addArr();
+                }
+                function addArr(){
+                    var i;
+                    var sum=0;
+                    for(i=0; i<arrdata.length;i++){
+                        sum+=arrdata[i];
+                    }
+                    document.write("<p/>result of sum of datas in array : " + sum + "<p/>");
+                    document.write("<a href='21_arr.html'>return</a>");
+                }
+            </script>
+            <button type="button" onclick="insertArr()">Array create/inquire/calculate</button>
+		</footer>
+	</body>	
+</html>

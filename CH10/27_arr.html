@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>use sort method</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                var ndata1=[19,38,67,26,55,24,53,12,31];
+                var ndata2=[132,2,41,123,45,1234,6,29,4567];
+                var edata=['Apple', 'Html', 'Game', 'Computer', 'Java'];
+                var gdata=['Berlin', 'Potsdam', 'Bochum', 'Frankfrut aM', 'Dresden'];
+                document.write("Numeric sort 1 : " + ndata1.sort() + "<p/>");
+                document.write("Numeric sort 2 : " + ndata2.sort() + "<p/>");
+                document.write("Numeric sort 3 : " + ndata2.sort(function(a,b){return a-b;}) + "<p/>"); //asc
+                document.write("Numeric sort 4 : " + ndata2.sort(function(a,b){return b-a;}) + "<p/>"); //desc
+                document.write("English sort 1 : " + edata.sort() + "<p/>");
+                document.write("English sort 2 : " + 
+                    gdata.sort(function(a,b){
+                        if(a<b) return 1;
+                        if(a>b) return -1;
+                        if(a===b) return 0;}) + "<p/>")
+            </script>
+		</footer>
+	</body>	
+</html>

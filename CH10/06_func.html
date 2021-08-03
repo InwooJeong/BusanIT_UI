@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>return value without variable</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                function add(name, n){
+                    document.write(name + " adds 1 to " + n + "<br>");
+                    var sum=0;
+                    for(var i=1;i<=n;i++){
+                        sum+=i;
+                    }
+                    return sum;
+                }
+                document.write("result : " + add('Hong', 10) + "<p/>");
+                document.write("result : " + add('Lee', 100) + "<p/>");
+            </script>
+		</footer>
+	</body>	
+</html>

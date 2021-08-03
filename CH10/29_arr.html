@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>use splice method</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                var gdata=['Berlin', 'Hamburg', 'Munich', 'Freiburg', 'Kiel'];
+                var str1=gdata.splice(1,2);
+                document.write("deleted data : " + str1 + "<br>");
+                document.write("lefted array : " + gdata + "<p/>");
+                var str2=gdata.splice(1, 1, 'Heidelberg', 'Stuttgart');
+                document.write("deleted data : " + str2 + "<br>");
+                document.write("lefted array : " + gdata + "<p/>");
+                var str3=gdata.splice(2, Number.MAX_VALUE);
+                document.write("deleted data : " + str3 + "<br>");
+                document.write("lefted array : " + gdata + "<p/>");
+            </script>
+		</footer>
+	</body>	
+</html>

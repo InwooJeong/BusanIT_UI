@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>create objects include just Attribute</title>
+    </head>
+	
+    <body>
+		<p id="var1"></p>
+        <p id="var2"></p>
+        <p id="var3"></p>
+        
+		<footer>
+            <script>
+                var car={name : 'Sonata', speed: 100, color: 'White'};
+                document.getElementById("var1").innerHTML="Name : " + car['name'];
+                document.getElementById("var2").innerHTML="Speed : " + car.speed;
+                document.getElementById("var3").innerHTML="colour : " + car.color;
+            </script>
+		</footer>
+	</body>	
+</html>

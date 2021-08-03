@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>Less factor</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                function add(x,y,z){
+                    var sum;
+                    if((y===undefined)&&(z===undefined)){
+                        sum=x;
+                    }else if(z===undefined){
+                        sum=x+y;
+                    }else{
+                        sum=x+y+z;
+                    }
+                    return sum;
+                }
+                var r1=add(2);
+                var r2=add(2,3);
+                var r3=add(4,5,6);
+                document.write("less factor : " + r1 + "<p/>");
+                document.write("less factor : " + r2 + "<p/>");
+                document.write("ordinaly : " + r3 + "<p/>");
+            </script>
+		</footer>
+	</body>	
+</html>

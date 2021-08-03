@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>Check Array Object</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                var city=new Array("Seoul","Busan","Incheon");
+                function printArr() {
+                    if(city instanceof Array) {
+                        document.write("Array Object is created <p/>");
+                        var i;
+                        for(i=0;i<city.length;i++) {
+                            document.write("data [" + i + "] = " +city[i] + "<br>");
+                        }
+                    }else{
+                        document.write("it's not an array object!<br>");
+                        document.write("data : " + city + "<br>");
+                    }
+                }
+                printArr();
+                document.write("<p/> type of city : " + typeof city +"<br>");
+                document.write("result of check : " + Array.isArray(city) +"<br>");
+            </script>
+		</footer>
+	</body>	
+</html>

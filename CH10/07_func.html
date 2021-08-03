@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>different variables in same function</title>
+    </head>
+	
+    <body>
+		
+		<footer>
+            <script>
+                function add(x, y){
+                    return x+y;
+                }
+                var calSum=add;
+                var addUp=add;
+                document.write("result value : " + calSum(5,10) + "<br>");
+                document.write("result value : " + addUp(3,20) + "<br>");
+            </script>
+		</footer>
+	</body>	
+</html>
