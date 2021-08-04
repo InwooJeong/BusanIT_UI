@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>Create Document Object</title>
+    </head>
+	
+    <body>
+		<a href="#" onclick="add()">WHO ARE YOU?</a>
+        
+		<footer>
+            <script>
+                function add(){
+                    var header=document.createElement('h3');
+                    var textNode=document.createTextNode('I am groot');
+                    header.appendChild(textNode);
+                    document.body.appendChild(header);
+                };
+            </script>
+		</footer>
+	</body>	
+</html>

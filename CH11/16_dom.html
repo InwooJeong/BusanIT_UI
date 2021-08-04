@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>Set Attribute</title>
+    </head>
+	
+    <body>
+		<a href="#" onclick="add()">[Willkommen!]</a>
+        
+		<footer>
+            <script>
+                function add(){
+                    var img=document.createElement('img');
+                    img.src='welcome.jpg';
+                    img.width=100;
+                    img.height=122;
+                    document.body.appendChild(img);
+                }
+            </script>
+		</footer>
+	</body>	
+</html>

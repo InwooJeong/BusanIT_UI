@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>Design Digital Clock</title>
+    </head>
+	
+    <body>
+        <div id="digClock"></div>
+		
+		<footer>
+            <script>
+                function digClock(){
+                    var today=new Date();
+                    var day=today.getMonth()+1 + " Mon " + today.getDate() + " date ";
+                    var time=today.getHours() + " Hour " + today.getMinutes() + " Min " + 
+                        today.getSeconds() + " sec ";
+                    document.getElementById("digClock").innerHTML = day+time;
+                    setTimeout('digClock()',1000);
+                }
+                digClock();
+            </script>
+		</footer>
+	</body>	
+</html>

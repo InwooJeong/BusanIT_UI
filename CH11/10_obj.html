@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>Array Constuctor</title>
+    </head>
+	
+    <body>
+        <p id="car"></p>
+        <p>[Car1 Attribute]</p>
+        <p id="car0"></p>
+        <p>[Car2 Attribute]</p>
+        <p id="car1"></p>
+        <p>[Car3 Attribute]</p>
+        <p id="car2"></p>
+		
+		<footer>
+            <script>
+                var car=new Array(
+                    ['Sonata','blue',100],
+                    ['Jeep','red',70],
+                    ['Passat','white',150]
+                );
+                var cname=document.getElementById("car");
+                cname.textContent="car[2][1] : " + car[2][1];
+                for(var i=0;i<3;i++){
+                    var cname=document.getElementById("car"+i);
+                    cname.textContent=car[i];
+                }
+            </script>
+		</footer>
+	</body>	
+</html>

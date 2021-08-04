@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>Method in Date Object_1</title>
+    </head>
+	
+    <body>
+		<p id="d1"></p>
+        <p id="d2"></p>
+        <p id="d3"></p>
+        <p id="d4"></p>
+        
+		<footer>
+            <script>
+                var today=new Date();
+                document.getElementById("d1").innerHTML=today.getFullYear() + " year ";
+                document.getElementById("d2").innerHTML=today.getMonth()+1 + " month " + today.getDate() + " date "
+                document.getElementById("d3").innerHTML=today.getHours() + " hour " + today.getMinutes() + " minute " +today.getSeconds() + " sec "
+                document.getElementById("d4").innerHTML=" how long seconds from 1th jan 1970?</p> "+
+                    today.getTime()+" ms ";
+            </script>
+		</footer>
+	</body>	
+</html>
