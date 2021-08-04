@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>control speed</title>
+    </head>
+	
+    <body>
+        <p id="upspeed"></p>
+        <p id="downspeed"></p>
+		
+		<footer>
+            <script>
+                var car={
+                    name: 'Sonata',
+                    speed: 100,
+                    color: 'white',
+                    speedup: function(a){
+                        var sp=this.speed+a;
+                        if(sp>=300){
+                            sp=50;
+                            return sp;
+                        }else{
+                            return sp;
+                        }
+                    },
+                    speeddown: function(a){
+                        var sp=this.speed-a;
+                        if(sp<0){
+                            sp=0;
+                            return sp;
+                        }else{
+                            return sp;
+                        }
+                    }
+                };
+                var upspeed=document.getElementById("upspeed");
+                upspeed.textContent='increase speed : ' + car.speedup(100);
+                var downspeed=document.getElementById("downspeed");
+                downspeed.textContent='decrease speed : ' + car.speeddown(30);
+            </script>
+		</footer>
+	</body>	
+</html>

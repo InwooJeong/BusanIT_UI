@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>create object using Object function</title>
+    </head>
+	
+    <body>
+		<p id="carname"></p>
+        <p id="carcolor"></p>
+        <p id="carspeed"></p>
+        
+		<footer>
+            <script>
+                var car=new Object();
+                car.name='Sonata';
+                car.speed=100;
+                car.color='blue';
+                car.speedup=function(){
+                    return this.speed+10
+                };
+                var cname=document.getElementById("carname");
+                cname.textContent='name : ' + car.name;
+                var colname=document.getElementById("carcolor");
+                colname.textContent='color : ' + car.color;
+                var cspeed=document.getElementById("carspeed");
+                cspeed.textContent='speed : ' + car.speedup();
+            </script>
+		</footer>
+	</body>	
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>create object after define constructor function</title>
+    </head>
+	
+    <body>
+		<p>[Hong's Car]</p>
+        <p id="hong1"></p>
+        <p id="hong2"></p>
+        <p id="hong3"></p>
+        
+        <p>[Kim's Car]</p>
+        <p id="data1"></p>
+        <p id="data2"></p>
+        <p id="data3"></p>
+        <p id="data4"></p>
+        
+		<footer>
+            <script>
+                function Car(name, color, speed){
+                    this.name = name;
+                    this.color = color;
+                    this.speed = speed;
+                    this.speedup = function(){
+                        return this.speed+10;
+                    };
+                    this.speeddown = function(){
+                        return this.speed-10;
+                    };
+                }
+                
+                var Hongcar = new Car('Sonata', 'blue', 100);
+                var Kimcar = new Car('Jeep', 'red', 70);
+                Kimcar.price = '30,-,-'
+                delete Kimcar.color;
+                
+                var cname=document.getElementById("hong1");
+                cname.textContent='car name : ' + Hongcar.name;
+                var colname=document.getElementById("hong2");
+                colname.textContent='car color : ' + Hongcar.color;
+                var cspeed=document.getElementById("hong3");
+                cspeed.textContent='car speed : ' + Hongcar.speedup;
+                
+                var cname=document.getElementById("data1");
+                cname.textContent='car name : ' + Kimcar.name;
+                var colname=document.getElementById("data2");
+                colname.textContent='car color : ' + Kimcar.color;
+                var cspeed=document.getElementById("data3");
+                cspeed.textContent='car speed : ' + Kimcar.speedup;
+                var cspeed=document.getElementById("data4");
+                cspeed.textContent='car price : ' + Kimcar.price;
+            </script>
+		</footer>
+	</body>	
+</html>

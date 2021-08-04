@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+        <title>create object after define constructor function</title>
+    </head>
+	
+    <body>
+		<p>[Hong's Car]</p>
+        <p id="carname"></p>
+        <p id="carcolor"></p>
+        <p id="carspeed"></p>
+        <p>[Kim's Car]</p>
+        <p id="carname2"></p>
+        <p id="carcolor2"></p>
+        <p id="carspeed2"></p>
+        
+		<footer>
+            <script>
+                function Car(name, color, speed){
+                    this.name = name;
+                    this.color = color;
+                    this.speed = speed;
+                    this.speedup = function(){
+                        return this.speed + 10;
+                    };
+                    this.speeddown = function(){
+                        return this.speed - 10;
+                    };
+                }
+                
+                var Hongcar = new Car('Sonata', 'blue', 100);
+                var Kimcar = new Car('Jeep', 'red', 70);
+                
+                var cname=document.getElementById("carname");
+                cname.textContent='car name : ' + Hongcar.name;
+                var colname=document.getElementById("carcolor");
+                colname.textContent='car color : ' + Hongcar.color;
+                var cspeed=document.getElementById("carspeed");
+                cspeed.textContent='car speed : ' + Hongcar.speed;
+                
+                var cname=document.getElementById("carname2");
+                cname.textContent='car name : ' + Kimcar.name;
+                var colname=document.getElementById("carcolor2");
+                colname.textContent='car color : ' + Kimcar.color;
+                var cspeed=document.getElementById("carspeed2");
+                cspeed.textContent='car speed : ' + Kimcar.speed;
+            </script>
+		</footer>
+	</body>	
+</html>
